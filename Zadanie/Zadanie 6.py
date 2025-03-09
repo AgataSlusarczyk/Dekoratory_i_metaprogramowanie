@@ -32,4 +32,5 @@ def TEST():
         t = MyTuple(*range(0, 27))
     except Exception as  a:
         isinstance(a,IndexError)
+    print("OK")
 TEST()
