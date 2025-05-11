@@ -5,6 +5,8 @@ musisz stworzyć krotkę indeksowaną literami z zakresu abcdefghijklmnopqrstuvw
 
 jeśli urzytkownik poda dla przykładu 3 zmienne i będzie chciał odczytać 4, zwróć AttributeError
 jeśli urzytkownik poda zbyt dużą ilość zmiennych przekraczającą 26 liczb, zwróć IndexError
+
+Użyj self._data
 """
 
 class MyTuple:
