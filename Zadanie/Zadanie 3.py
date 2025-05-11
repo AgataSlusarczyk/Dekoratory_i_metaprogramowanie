@@ -10,7 +10,7 @@ na potrzeby zadania zakładamy że urzytkownik nie tworzy zmiennych zaczynający
 stare zmienne powinny być usunięte!! urzytkownik nie powinien korzystać ze starych zmiennych!!
 nie zmieniaj zmiennych magicznych!!
 
-Urzyj cls.__dict__ !!
+Użyj cls.__dict__!!
 """
 
 
