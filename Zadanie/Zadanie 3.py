@@ -9,6 +9,8 @@ UWAGA:
 na potrzeby zadania zakładamy że urzytkownik nie tworzy zmiennych zaczynających się i kończących __ (podwójną podłogą)
 stare zmienne powinny być usunięte!! urzytkownik nie powinien korzystać ze starych zmiennych!!
 nie zmieniaj zmiennych magicznych!!
+
+Urzyj cls.__dict__ !!
 """
 
 
