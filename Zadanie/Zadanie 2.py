@@ -1,4 +1,10 @@
-# Rozwiązanie ćwiczenia: Dekorator mierzący czas wykonania funkcji
+"""
+Dekorator mierzący czas wykonania funkcji
+Zaimplementuj dekorator measure_time, który zmierzy czas wykonania funkcji i wypisze go w konsoli.
+
+Przykład wyświetlania:
+Czas wykonania slow_function: 1.000123 s
+"""
 
 import time
 
@@ -7,8 +13,7 @@ def measure_time(func):
         # TODO: Zapisz aktualny czas przed wywołaniem funkcji.
         start = time.time()
 
-        # TODO: Wywołaj oryginalną funkcję 'func' z przekazanymi argumentami
-        # i zapisz jej wynik. -> POPRAWIONE
+        # TODO: Wywołaj oryginalną funkcję 'func' z przekazanymi argumentami i zapisz jej wynik.
         result = func(*args, **kwargs)
 
         # TODO: Zapisz aktualny czas po wywołaniu funkcji.
@@ -18,8 +23,8 @@ def measure_time(func):
         duration = end - start
 
         # TODO: Wypisz czas wykonania w konsoli, używając formatu z przykładu.
-        # Użyj nazwy funkcji (func.__name__) i zmierzonego czasu (duration).
-        # Sformatuj czas do 6 miejsc po przecinku. -> POPRAWIONE
+        # Użyj nazwy funkcji i zmierzonego czasu .
+        # Sformatuj czas do 6 miejsc po przecinku.
         print(f"Czas wykonania {func.__name__}: {duration:.6f} s")
 
         # TODO: Zwróć wynik oryginalnej funkcji
@@ -29,7 +34,7 @@ def measure_time(func):
 @measure_time
 def slow_function():
     """Symuluje operację zajmującą czas."""
-    time.sleep(1) # Czekaj 1 sekundę
+    time.sleep(1)
     return "Gotowe!"
 
 print("Wywołuję slow_function...")

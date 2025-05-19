@@ -8,18 +8,13 @@ Wywołano: add((2, 3), {}) -> 5
 
 """
 
-
-# Rozwiązanie ćwiczenia: Dekorator logujący wywołania funkcji
-
 def log_calls(func):
-    def wrapper(*args, **kwargs): # TODO: Zmień sygnaturę funkcji wrapper  (*args, **kwargs)
-        # TODO: Wywołaj oryginalną funkcję 'func' z przekazanymi argumentami
-        # i zapisz jej wynik. ->
+    def wrapper(*args, **kwargs):
+        # TODO: Wywołaj oryginalną funkcję 'func' z przekazanymi argumentami i zapisz jej wynik
         result = func(*args, **kwargs)
 
         # TODO: Wypisz w konsoli informację zgodną z przykładem wyniku.
-        # Użyj nazwy funkcji (func.__name__), argumentów (*args, **kwargs)
-        # i zapisanego wyniku (result). ->
+        # Użyj nazwy funkcji, argumentów i zapisanego wyniku (result)
         print(f"Wywołano: {func.__name__}({args}, {kwargs}) -> {result}")
 
         # TODO: Zwróć wynik oryginalnej funkcji
