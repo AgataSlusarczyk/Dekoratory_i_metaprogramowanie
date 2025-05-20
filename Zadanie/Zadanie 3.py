@@ -15,14 +15,7 @@ Użyj cls.__dict__!!
 
 
 def reverse_attributes(cls):
-    attributes_to_reverse = [attr_name for attr_name in cls.__dict__ if not attr_name.startswith('__')]
-    for attr_name in attributes_to_reverse:
-        attr_value = getattr(cls, attr_name)
-        reversed_name = attr_name[::-1]
-        setattr(cls, reversed_name, attr_value)
-        delattr(cls, attr_name)
-
-    return cls
+    
 
 def TEST():
     @reverse_attributes
