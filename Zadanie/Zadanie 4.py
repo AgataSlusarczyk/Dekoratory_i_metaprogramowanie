@@ -10,19 +10,7 @@ Użyj self._data
 """
 
 class MyTuple:
-    def __init__(self, *args):
-        letters = "abcdefghijklmnopqrstuvwxyz"
-        if len(args) > len(letters):
-            raise IndexError("Too many arguments, maximum is 26")
-        self._data = {}
-        for i, value in enumerate(args):
-            if i < len(letters):
-                self._data[letters[i]] = value
-
-    def __getattr__(self, name):
-        if name in self._data:
-            return self._data[name]
-        raise AttributeError(f"Attribute '{name}' not found")
+    
 def TEST():
     t = MyTuple("ff", 2, 3)
     assert t.a == "ff" and t.b == 2 and t.c == 3
